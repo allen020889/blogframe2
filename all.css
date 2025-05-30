@@ -154,6 +154,7 @@ a{
   } 
   .card{
     padding: 40px 36px;
+    position:static;
   }
 }
 
