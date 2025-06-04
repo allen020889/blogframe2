@@ -97,17 +97,19 @@ a{
 }
 .hero-right{
   width: 50%;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .hero-right{
   position: relative;
 }
 .hero-text{
-     position: absolute;
-  top: 30%;
-  left: 10%;
+  margin: 0 auto;
    color: #0027D5;
   font-weight: bold;
-  line-height: 1.5;
 }
 .hero-text h1{
     font-size: 120px;
@@ -118,14 +120,13 @@ a{
 
 .card{
   background: white;
-  position:absolute;
+  width: 50%;
   padding: 80px 40px;
-  top:650px;
-  left:600px;
+  margin-top: -20%;
+  margin-left: 40%;
 }
 .card p{
   font-size: 28px;
-  line-height: 1.5;
 }
 .symbol{
   display: flex;
@@ -133,6 +134,7 @@ a{
 @media(max-width:767px){
   .wrap{
     flex-direction:column;
+    margin: 0 auto;
   }
   .hero{
     width: 100%;
@@ -155,6 +157,8 @@ a{
   .card{
     padding: 40px 36px;
     position:static;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -168,7 +172,6 @@ a{
   max-width:1296px;
   margin: 0 auto;
   margin-top: 80px;
-  line-height: 1.5;
 }
 .content img{
   display: block;
@@ -178,6 +181,7 @@ a{
   margin-bottom: 32px;
 }
 .content-list{
+  max-width: 100%;
   display: flex;
   flex-direction:column;
   gap: 64px;
@@ -189,16 +193,15 @@ a{
   align-items: center;
 }
 .content li img{
-  position:relative;
+  max-width: 100%;
 }
 .info-right{
-  position:absolute;
-  left:830px;
+  margin-left: -5%;
+  width: 100%;
   background: white;
 }
 .info-left{
-  position:absolute;
-  right:830px;
+  margin-right: -5%;
   background: white;
 }
 .reverse{
@@ -222,9 +225,11 @@ a{
   display: flex;
   justify-content: end;
   font-size: 28px;
-  line-height: 1.5;
   margin-top: 32px;
   margin-bottom: 80px;
+}
+.more a{
+  color: #000;
 }
 .more svg{
   height: 40px;
@@ -232,7 +237,7 @@ a{
 }
 @media(max-width:767px){
   .content{
-    width: 100%;
+    max-width: 100%;
   }
   .content h2{
     text-align: center;
@@ -241,18 +246,19 @@ a{
   .content-list{
     flex-direction:column;
     align-items: center;
-    width: 100%;
     padding: 0px;
   }
   .content-list img{
-    width: 100%;
+   width: 100%;
   }
   .content  li{
     flex-direction:column;
+    max-width: 100%;
   }
   .info{
     position:static;
-    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
   .more{
     flex-direction:column;
@@ -441,20 +447,21 @@ li.swiper-slide {
 
 
 .example{
-  width: 100%;
+  max-width: 100%;
   border-top:1px solid #6C757D;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 .example-content{
-  max-width:1296px;
   margin: 0 auto;
-  line-height: 1.5;
 }
 .example-content h2{
   font-weight: bold;
   font-size: 64px;
   margin-bottom: 24px;
+}
+.example-info{
+  position:relative;
 }
 .example-photo{
   width: 745px;
@@ -463,17 +470,17 @@ li.swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  position:relative;
   margin-bottom: 40px;
 }
 .example-card1{
-  width: 526px;
+  position:absolute;
+  top: 4%;
+  left: 40%;
+  width: 50%;
   height: 296px;
   background: #FFFFFF;
   padding: 80px 40px;
-  position:absolute;
-  top:30px;
-  left:550px;
+  
   font-weight: bold;
 }
 .example-card1 span{
@@ -481,13 +488,13 @@ li.swiper-slide {
 }
 
 .example-card2{
-  width: 526px;
+  position:absolute;
+  top: 45%;
+  left: 58%;
+  width: 40%;
   height: 312px;
   background: #F5F5F5;
   padding: 80px 40px;
-  position:absolute;
-  top:300px;
-  left:780px;
   font-weight: bold;
 }
 .example-content svg{
@@ -523,7 +530,6 @@ li.swiper-slide {
 .profile{
   display: flex;
   justify-content: space-between;
-  line-height: 1.5;
 }
 .profile li{
   max-width:294px;
@@ -575,7 +581,6 @@ li.swiper-slide {
     justify-content: center;
     position: relative;
     margin-bottom: 40px;
-    height: 998px;
   }
 
   .example-photo img {
@@ -588,7 +593,7 @@ li.swiper-slide {
   .example-card1,
   .example-card2 {
     position: static;
-    max-width: 100%;
+    width: 100%;
     padding: 40px 30px;
     padding-left: 80px;
   }
@@ -633,7 +638,6 @@ li.swiper-slide {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
 }
 .subscribe-card{
-  line-height: 1.5;
   padding: 80px;
   background: #FFFFFF;
 }
@@ -671,6 +675,9 @@ li.swiper-slide {
   margin-top: 30px;
   color: #0027D5;
   font-weight: bold;
+}
+.subscribe-card .read:hover{
+  color: white;
 }
 
 @media(max-width:767px){
