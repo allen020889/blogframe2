@@ -102,6 +102,9 @@ a{
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 .hero-right{
   position: relative;
@@ -630,11 +633,17 @@ li.swiper-slide {
 .subscribe-left{
   width: 50%;
 }
+.subscribe-left img{
+  display: block;
+}
 .subscribe-right{
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/16da9aa899a5190ed2d5bdfe48ae1cc631b95463/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
 }
 .subscribe-card{
